@@ -4,14 +4,14 @@ things you need to do to get this script to work:
 - install python
 - run ```pip install instagrapi```
 - create new file in main folder called "pass.json", paste this into it and change username and password:
-  ```json
+  ```
   {
     username : "your-username",
     password : "your-password"
   }
   ```
 - create new file in main folder called "var.json", paste this into it and change users and receiver:
-  ```json
+  ```
   {
       "receiver" : "User-who-will-receive-the-message",
       "users" : ["users","to","take", "reels", "from"]

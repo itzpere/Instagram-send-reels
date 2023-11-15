@@ -18,11 +18,21 @@ except Exception as e:
     print("The file 'pass.json' does not exist. create it and add the username and password")
     exit(1)
 
-#changable vars
+try:
+    with open('var.json', 'r') as file:
+        vardata = json.load(file)
+    if "receiver" in vardata and "users" in vardata:
+        users = vardata['users']
+        receiver = vardata['receiver']
+    else:
+        print("The 'receiver' and/or 'users' keys do not exist in the 'var.json' file.")
+        exit(1)
+except Exception as e:
+    print("The file 'pass.json' does not exist. create it and add the username and password")
+    exit(1)
+
+#data file path
 file_path = "./data-users.json"
-receiver = "hajder_luka"
-users = ["greeky_or_nerdy","one_shoe_one_sock","beingmoreattractive", "placitech_", "memesnetworks", "litterallymevids"]
-print("users = ",users)
 
 #get random hash from data
 def getuser():

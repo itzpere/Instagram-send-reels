@@ -11,12 +11,12 @@ things you need to do to get this script to work:
   }
   ```
 - create new file in main folder called "var.json", paste this into it and change users and receiver:
-```json
-{
-    "receiver" : "User-who-will-receive-the-message",
-    "users" : ["users","to","take", "reels", "from"]
-}
-```
+  ```json
+  {
+      "receiver" : "User-who-will-receive-the-message",
+      "users" : ["users","to","take", "reels", "from"]
+  }
+  ```
 
 edit the script and in the var receiver you set the username of the person you want to sent to and in users you set the accounts you want to take reels from
 you can also change in getUserMedia() how many videos to take and store before taking the new ones

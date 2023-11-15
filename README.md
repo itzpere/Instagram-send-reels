@@ -65,20 +65,20 @@ Please replace `"your_username"`, `"your_password"`, `"receiver_info"`, and `["u
 
 To explain how this script works
 
-- Login: The script logs into Instagram using the account credentials provided in the pass.json file.
+1. Login: The script logs into Instagram using the account credentials provided in the pass.json file.
 
-- Check for saved reels: The script checks the data.json file for any saved reels.
+1. Check for saved reels: The script checks the data.json file for any saved reels.
 
-- Check for saved users: If there are no saved reels, the script checks if there are any saved users in the data.json file.
+1. Check for saved users: If there are no saved reels, the script checks if there are any saved users in the data.json file.
 
-- Use provided user list: If there are no saved users, the script uses the list of users provided in the users variable.
+1. Use provided user list: If there are no saved users, the script uses the list of users provided in the users variable.
 
-- Random user selection: The script selects one user at random from the available list.
+1. Random user selection: The script selects one user at random from the available list.
 
-- Extract reels: The script extracts reels from the selected user's account.
+1. Extract reels: The script extracts reels from the selected user's account.
 
-- Save extracted reels and users: The script saves the extracted reels and the list of users (excluding the user used for extraction) to the data.json file. This ensures that the same user (and hence the same reels) are not used again.
+1. Save extracted reels and users: The script saves the extracted reels and the list of users (excluding the user used for extraction) to the data.json file. This ensures that the same user (and hence the same reels) are not used again.
 
-- Send and remove reel: The script selects one reel from the saved list, sends it, and then removes it from the data.json file to avoid repetition.
+1. Send and remove reel: The script selects one reel from the saved list, sends it, and then removes it from the data.json file to avoid repetition.
 
 In summary, this script automates the process of logging into Instagram, selecting a user, extracting their reels, and sending them, while ensuring that the same user and reels are not used repeatedly.
